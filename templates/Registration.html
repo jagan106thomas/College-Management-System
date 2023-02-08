@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+      <script src="https://kit.fontawesome.com/fb4fb8c853.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<i class="fa-solid fa-school fa-4x" style="margin-left: 720px;"></i>
+
+<h1 align="center">Student Registration</h1>
+<form action="regdata" method="post">
+  {% csrf_token %}
+  <h3 style="color:red" align="center">{{data}}</h3>
+  <table align="center">
+    <tr>
+      <td><label for="a1">Username</label></td>
+      <td><input type="text" name="txtUserName" id="a1"></td>
+    </tr>
+    <tr>
+      <td><label for="a2">User Password</label></td>
+      <td><input type="password" name="txtUserPswd" id="a2"></td>
+    </tr>
+    <tr>
+      <td><label for="a3">User Email</label></td>
+      <td><input type="Email" name="txtUserEmail" id="a3"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="btnsub" value="register"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
